@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="toggle-btn" onclick="toggleMode()">
+      <img
+        src="https://cdn.dribbble.com/users/3212322/screenshots/13914635/media/5e91a9e95d73ee4202c6a5f7bc85a12d.gif"
+        alt=""
+        height="60px"
+        width="80px"
+      />
+    </button>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1>Quiz App</h1>
+      </div>
+      <div id="question"></div>
+      <div class="quiz-content">
+        <p class="question"></p>
+        <ul class="options">
+          <li>
+            <label><input type="radio" name="answer" value="1" /> Paris</label>
+          </li>
+          <li>
+            <label><input type="radio" name="answer" value="2" /> Berlin</label>
+          </li>
+          <li>
+            <label><input type="radio" name="answer" value="3" /> Madrid</label>
+          </li>
+          <li>
+            <label><input type="radio" name="answer" value="4" /> Rome</label>
+          </li>
+        </ul>
+      </div>
+      <button class="submit-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

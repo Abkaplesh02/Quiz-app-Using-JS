@@ -1,0 +1,105 @@
+:root {
+    --bg-light: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,21,36,1) 59%, rgba(0,212,255,1) 100%);
+    --bg-dark: linear-gradient(to right, #434343, #000000);
+    --text-light: #333;
+    --text-dark: #fff;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-light);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s, color 0.5s;
+  }
+
+  body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  .quiz-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.5s;
+  }
+
+  body.dark-mode .quiz-container {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .quiz-header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .options {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .options li {
+    margin-bottom: 10px;
+  }
+
+  .options input {
+    margin-right: 10px;
+  }
+
+  .submit-btn  , .startAgain{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .toggle-btn:hover {
+    background-color: #555;
+  }
+
+  .quiz-content {
+    display: none;
+  }
